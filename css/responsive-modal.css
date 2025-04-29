@@ -16,8 +16,35 @@
     
 }
 
-@media (min-width: 401px) and (max-width: 767px) {
-    
+@media (min-width: 401px) and (max-width: 1366px) {
+ 
+  .modal-body {
+    margin-top: 0;
+  }
+  .sect-modal {
+    height: auto;
+  }
+  .img-content1 {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+  }
+  .img-content1 img {
+      height: auto;      
+  }
+  .img-content2 {
+      flex-direction: column;
+      width: 60%;
+      flex-wrap: wrap;
+  }
+  .img-content2 img {
+      background-color: black;
+      height: auto;
+      width: 100%;
+  }
+  .ti-modal-content {
+    height: 150px;
+  }
 }
 
 /* Media query para pantallas menores a 800px */
