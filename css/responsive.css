@@ -1,0 +1,434 @@
+/* -------------------------- responsive -------------------------- */
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media (max-width: 1920px) {}
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media (max-width: 1537px) {
+    
+    h2 {
+        font-size: 50px;
+        font-weight: 900;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 22px;
+        font-weight: 200;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        font-size: 20px;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Large devices (desktops, 992px and down) */
+@media (min-width: 951px) and (max-width: 1366px) {
+    
+    .cont {
+        width: 50%;
+        display: flex;
+        height: 60vh;
+        overflow: hidden;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (min-width: 768px) and (max-width: 950px) {
+    /* Estilos que se aplicarán solo dentro del rango especificado */
+  
+    h1 {
+        font-size: 80px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .cont1 {
+        padding: 40px;
+    }
+    .title {
+        width: 700px;
+        height: 180px;
+    }    
+    .paragraph {
+        position: absolute;
+        padding: 20px 30px;
+        height: auto;
+    }
+    .item {
+        display: flex;
+        justify-content: center;
+        max-width: 750px;
+        height: auto;
+    }
+    .cont1 {
+        margin: 0;
+    }
+    .cont-po {
+        height: 50vh;
+    }
+    .gallery-c {
+        height: 35vh;
+    }
+    .gallery-c p {
+        width: 100%;
+    }
+    .tool-skill div {
+        margin-top: 20px;
+    }
+    .tool-skill a {
+        width: 70px;
+        height: 60px;
+        margin: 15px;
+    }
+    .tool-skill img {
+        width: 50px;   
+    }
+    .habilidades {
+        margin: 40px;
+        margin-top: 100px;
+        height: auto;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 640px) {
+    .cont-po {
+        height: 200px;
+    }
+    .cade img {
+        height: 100%;
+        width: auto;
+    }    
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+    .cont1 {
+        padding: 0px;
+        width: 90%;
+        height: auto;
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+    .co {
+        width: 100%;
+        margin: 0px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    .cont {
+        flex-direction: column;
+        height: auto;
+    }
+    .imagen1 {
+        filter: grayscale(100%);
+        transition: filter 0.5s ease, transform 0.5s ease;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .container-exp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .title {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transition: background-color 1s ease;
+        height: 250px;
+        text-align: center;
+    }
+    .paragraph {
+        padding: 0px;
+        width: 100%;
+        height: 250px;
+        padding: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .item {
+        width: 100%;
+    }
+    .habilidades {
+        margin: 50px;
+        margin-top: 100px;
+        height: auto;
+    }
+    .tool-skill {
+        width: 100%;
+    }
+    .tool-skill div {
+        margin-top: 20px;
+    }
+    .tool-skill a {
+        width: 80px;
+        height: 70px;
+        margin: 10px;
+    }
+    .tool-skill img {
+        width: 50px;   
+    }
+    .container-sl {
+        height: 200px;
+    }
+    .portafolio {
+        height: auto;
+    }
+    .cont-po {
+        max-height: 300px;      
+    }
+    .gallery-c {
+        height: 38vh;
+    }
+    .gallery-c p {
+        width: 100%;
+    }
+}
+
+/* Media query para pantallas menores a 800px */
+@media (max-width: 800px) {
+    p {
+        font-size: 18px;
+    }
+    .men {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: black;
+      padding: 1rem 0;
+    }
+  
+    .men.active {
+      display: flex;
+    }
+  
+    .men li {
+      margin: 20px;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+  
+    .icon {
+      display: block;
+    }
+}
+
+
+/* Small devices (phones, 576px and down) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 900;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 22px;
+        font-weight: 200;
+    }
+    p {
+        font-size: 17px;
+    }
+    a {
+        font-size: 17px;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*----------------- habilidades -----------------*/
+
+    .habilidades {
+        margin: 200px 12px 100px 12px;
+        height: auto;
+    }
+    .habilidades h3 {
+        margin: 20px 0 5px 0;
+    }
+
+    /*----------------- slider -----------------*/
+
+
+    .text-port {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .portafolio {
+        height: auto;
+        margin-top: 0px;
+    }
+    .container-sl {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    .item {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+    .container-sl img {
+        height: 300px;
+        width: 90%;
+        object-fit: cover;
+    }
+
+    .container-sl img:hover {
+        width: 95%;
+        object-fit: cover;
+    }
+
+    /*----------------- sobre mi -----------------*/
+    .principal h4 {
+        text-align: center;
+        
+    }
+    .cont {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .cont1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    article.co {
+        overflow: hidden;
+        padding: 0;
+    }
+    .imagen1 {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
+    /*----------------- container experiencia -----------------*/
+    .container-exp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .title {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transition: background-color 1s ease;
+        height: 300px;
+        text-align: center;
+    }
+    .paragraph {
+        padding: 0;
+        width: 100%;
+        height: 20px;
+    }
+    .item {
+        width: 100%;
+    }    
+
+
+    /*----------------- contenido portafolio -----------------*/
+    .gallery-c p {
+        width: 100%;
+    }
+    .gal {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .gallery-c p {
+        width: 100%;
+    }
+    .cade {
+        height: 200px;
+    }
+
+
+
+    .tool-skill {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+    .tool-skill div {
+        margin-top: 20px;
+    }
+    .tool-skill a {
+        width: 70px;
+        height: 60px;
+        margin: 10px;
+    }
+    .tool-skill img {
+        width: 50px;   
+    }
+    .cont-po {
+        width: 100%;
+        height: 300px;
+    }
+    .cade img {
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+    }
+    .cont1 {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        
+    }
+    .paragraph {
+        padding: 0;
+        max-width: 399px;
+        height: auto;
+    }
+    .imagen1 {
+        width: 100%;
+        height: 400px;
+    }
+    article.co {
+        width: 100vw;
+        padding: 0;
+    }
+}

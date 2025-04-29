@@ -24,32 +24,43 @@ function ShowHide(id) {
 
 };
 
-let lastOpenedParagraph = null;
 
 function toggleParagraph(id) {
-    const paragraph = document.getElementById(`paragraph${id}`);
-
-    if (lastOpenedParagraph && lastOpenedParagraph !== paragraph) {
-        // Oculta el párrafo anterior y restaura su tamaño original
-        lastOpenedParagraph.classList.remove('visible');
-        lastOpenedParagraph.style.width = '0'; // Restaura el ancho
-        lastOpenedParagraph.style.height = '0'; // Restaura el alto
-    }
-
-    // Muestra u oculta el párrafo actual
-    if (paragraph.classList.contains('visible')) {
-        paragraph.classList.remove('visible');
-        paragraph.style.width = '0'; // Restaura el ancho
-        paragraph.style.height = '0'; // Restaura el alto
+    // Elementos específicos del ítem clickeado
+    const selectedParagraph = document.getElementById(`paragraph${id}`);
+    const selectedTitle = document.querySelector(`.title[onclick="toggleParagraph(${id})"]`);
+    
+    // Si el párrafo seleccionado ya está visible
+    if (selectedParagraph.style.opacity === '1') {
+        // Ocultar este párrafo y mostrar su título
+        selectedParagraph.style.opacity = '0';
+        selectedTitle.style.opacity = '1';
     } else {
-        paragraph.style.width = '900px'; // Cambia el ancho (ajusta según necesites)
-        paragraph.style.height = 'auto'; // Cambia el alto (ajusta según necesites)
-        paragraph.classList.add('visible');
+        // Ocultar todos los párrafos y mostrar todos los títulos primero
+        const allParagraphs = document.querySelectorAll('.paragraph');
+        const allTitles = document.querySelectorAll('.title');
+        
+        allParagraphs.forEach(paragraph => {
+            paragraph.style.opacity = '0';
+        });
+        
+        allTitles.forEach(title => {
+            title.style.opacity = '1';
+        });
+        
+        // Mostrar el párrafo seleccionado y ocultar su título
+        selectedParagraph.style.opacity = '1';
+        selectedTitle.style.opacity = '0';
     }
-
-    lastOpenedParagraph = paragraph;
 }
 
+// Inicialización - ocultar todos los párrafos al cargar
+document.addEventListener('DOMContentLoaded', function() {
+    const paragraphs = document.querySelectorAll('.paragraph');
+    paragraphs.forEach(paragraph => {
+        paragraph.style.opacity = '0';
+    });
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -108,7 +119,15 @@ function closeModalFn(modal) {
     modal.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
+//---------------------------------------------------------------------//
 
+function myFunction() {
+    const menu = document.getElementById("myTopnav");
+    const icon = document.querySelector(".icon");
+    
+    menu.classList.toggle("active");
+    icon.classList.toggle("active");
+}
 
 //---------------------------------------------------------------------//
 

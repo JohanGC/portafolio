@@ -35,7 +35,7 @@ h3 {
     font-size: 60px;
 }
 h4 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 900;
 }
 h5 {
@@ -62,6 +62,11 @@ a {
     align-items: center;
     top: 0;
     left: 0;
+}
+.icon {
+    color: white;
+    margin-right: 20px;
+    display: none;
 }
 .logo {
     height: 80px;
@@ -137,7 +142,7 @@ a {
 .gallery-c p {
     width: 50%;
 }
-.cont {
+.cont-po {
     width: 50%;
     display: flex;
     height: 60vh;
@@ -150,13 +155,13 @@ a {
 .cade {
     width: 100%;
 }
-.cont img {
+.cont-po img {
     max-width: 100%;
     filter: grayscale(100%);
     transition: transform 1s ease, filter 1s ease-in-out;
 }
 
-.cont img:hover {
+.cont-po img:hover {
     transform: scale(1.2);
     filter: grayscale(0);
 }
@@ -185,11 +190,3 @@ footer h4, p {
 }
 
 
-
-/* -------------------------- responsive -------------------------- */
-
-@media (min-width: 768px) {
-    p {
-        font-size: 20px;
-    }
-}

@@ -1,7 +1,5 @@
 
-p {
-    font-size: 25px;
-}
+
 
 .modal {
     position: fixed;
@@ -44,7 +42,7 @@ p {
     transform: scale(1);
 }
 .modal-header {
-    background-color: #f9fafb;
+    background-color: white;
     border-bottom: 1px solid #f5f5f5;
     display: flex;
     justify-content: flex-end;

@@ -6,24 +6,30 @@
     
     <title>Johan G.C.</title>
     <link rel="stylesheet" href="css/style-portf.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style-modal.css">
+    <link rel="stylesheet" href="css/responsive-modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></link>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     
     <!-- MENU DE NAVEGACIÓN -->
     <nav class="menu">
-        <a class="log-cont" href="index.html#ppl"><img src="img/logo-01.svg" alt="" class="logo"></a>
-        <ul class="men">
+        <a class="log-cont" href="index.html"><img src="img/logo-01.svg" alt="" class="logo"></a>
+        <ul class="men" id="myTopnav">
             <li><a href="index.html#sobremi">Sobre mi</a></li>
             <li><a href="index.html#experiencia">Experiencia</a></li>
             <li><a href="portafolio.html">Portafolio</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
     
     <!-- CONTENIDO PPL -->    
@@ -36,31 +42,31 @@
         </section>
     
         <section class="gal">
-            <article class="cont">
+            <article class="cont-po">
                 <a href="#" data-modal-target="modal-asaki">
                     <img src="img/Asaki-Fit_1.png" alt="">
                 </a>
             </article>
     
-            <article class="cont">
+            <article class="cont-po">
                 <a href="#">
                     <img src="img/Rabbit_0.png" alt="">
                 </a>
             </article>
     
-            <article class="cont">
+            <article class="cont-po">
                 <a href="#" data-modal-target="modal-iamsterdam">
                     <img src="img/Onca_0.png" alt="">
                 </a>
             </article>
     
-            <article class="cont">
+            <article class="cont-po">
                 <a href="#" data-modal-target="modal-iamsterdam">
                     <img src="img/IAmsterdam_0.png" alt="">
                 </a>
             </article>
             
-            <article class="cont">
+            <article class="cont-po">
                 <a href="#">
                     <img src="img/MachadoIndigente_1.png" alt="">
                 </a>
@@ -78,7 +84,7 @@
     </section>
 
     <section class="gal">
-        <article class="cont cade">
+        <article class="cont-po cade">
             <a href="#" data-modal-target="modal-cadena">
                 <img src="img/cadena_0.png" alt="">
             </a>
