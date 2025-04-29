@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -31,7 +32,7 @@
         </a>
     </nav>
     
-    <header id="ppl" class="principal">        
+    <header data-aos="fade-up" data-aos-duration="800" id="ppl" class="principal">        
         <h1>Johan Gonzalez C.</h1>
         <h4>Web Developer & Graphic Designer.</h4>
     </header>
@@ -52,7 +53,7 @@
     <section id="experiencia" class="container">
         <article class="container-exp">
         
-            <div class="item">
+            <div  data-aos="fade-up" data-aos-duration="800" class="item">
                 <div class="title" onclick="toggleParagraph(1)">
                     <h2>CADENA S.A.</h2>
                     <h5>2019 - Presente</h5>
@@ -62,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div data-aos="fade-up" data-aos-duration="800" class="item">
                 <div class="title" onclick="toggleParagraph(2)">
                     <h2>EMTELCO.</h2>
                     <h5>Noviembre 2016 - Mayo 2017</h5>
@@ -72,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div data-aos="fade-up" data-aos-duration="800" class="item">
                 <div class="title" onclick="toggleParagraph(3)">
                     <h2>FREELANCE.</h2>
                     <h5>2017 - Presente</h5>
@@ -85,13 +86,13 @@
         </article>
     </section>
 
-    <section class="habilidades">
+    <section  data-aos="fade-up" data-aos-duration="800" class="habilidades">
         <h2>Hablidades.</h2>
         <h3>Graphic Designer.</h3>
         <p>Gestión de proyectos que buscan una comunicación gráfica efectiva conceptualizando la creatividad, la tecnolocía y la planificación estratégica. Alto conocimiento en métodos de impresión y producción tanto de material POP como material de seguridad, tintas, acabados y sustratos. Construcción de formularios estáticos con Adobe Acrobat, y formularios dinámicos con LiveCycle. Construcción de prototipos para el desarrollo de plataformas digitales, páginas web y aplicaciones. Conocimiento de herramientas con enfoque audiovisual como After Effects y Premiere Pro.</p>
         <h3>Developer.</h3>
         <p>Analizar información dirigida a la ciencia de los datos, siendo fundamental en el apoyo para las empresas en la toma de decisiones. Diseño y aplicación informática acompañando la implementación de equipos actuales e innovadores. Aplicación de los principales métodos de procesamiento de datos en la solución de problemas y optimización de procesos. Analisis de redes y dispositivos informaticos en busca de amenazas y mitigación de vulnerabilidades. Analizar, diseñar y gestionar sistemas de información integrando tecnología avanzada. </p>
-        <div class="tool-skill">
+        <div data-aos="fade-up" data-aos-duration="800" class="tool-skill">
             <h3>Herramienta y Tecnología</h3>
             <div>
                 <a href="" class="icon-skill">
@@ -151,7 +152,7 @@
             </div>
     </section>
 
-    <section class="portafolio">
+    <section data-aos="fade-up" data-aos-duration="800" class="portafolio">
         <div class="text-port">
             <h2>Portafolio</h2>
             <p>Conoce más sobre mi trabajo</p>
@@ -183,5 +184,9 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

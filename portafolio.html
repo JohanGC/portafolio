@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     
@@ -37,37 +38,37 @@
         
         <section class="gallery-c1">
             <article class="intro">
-                <h2>PORTAFOLIO</h2>
+                <h2>PORTAFOLIO.</h2>
             </article>
         </section>
     
         <section class="gal">
             <article class="cont-po">
-                <a href="#" data-modal-target="modal-asaki">
+                <a data-aos="zoom-out" href="#" data-modal-target="modal-asaki">
                     <img src="img/Asaki-Fit_1.png" alt="">
                 </a>
             </article>
     
             <article class="cont-po">
-                <a href="#">
+                <a data-aos="zoom-out" href="#">
                     <img src="img/Rabbit_0.png" alt="">
                 </a>
             </article>
     
             <article class="cont-po">
-                <a href="#" data-modal-target="modal-iamsterdam">
+                <a data-aos="zoom-out" href="#" data-modal-target="modal-iamsterdam">
                     <img src="img/Onca_0.png" alt="">
                 </a>
             </article>
     
             <article class="cont-po">
-                <a href="#" data-modal-target="modal-iamsterdam">
+                <a data-aos="zoom-out" href="#" data-modal-target="modal-iamsterdam">
                     <img src="img/IAmsterdam_0.png" alt="">
                 </a>
             </article>
             
             <article class="cont-po">
-                <a href="#">
+                <a data-aos="zoom-out" href="#">
                     <img src="img/MachadoIndigente_1.png" alt="">
                 </a>
             </article>
@@ -77,14 +78,14 @@
     </main>
  <!--CONTENIDO PPL--> 
     <section class="gallery-c">
-        <article class="intro">
+        <article data-aos="fade-up" data-aos-duration="800" class="intro">
             <h2>CADENA S.A.</h2>
             <p>Los diseños presentados en esta entrada han sido desarrollados durante mi vinculación laboral con Cadena S.A. Cabe destacar que todos los proyectos aquí incluidos son propiedad intelectual exclusiva de los clientes de Cadena, conforme a los acuerdos de confidencialidad y derechos de autor establecidos por la empresa.</p>
         </article>
     </section>
 
     <section class="gal">
-        <article class="cont-po cade">
+        <article data-aos="zoom-out" class="cont-po cade">
             <a href="#" data-modal-target="modal-cadena">
                 <img src="img/cadena_0.png" alt="">
             </a>
@@ -274,7 +275,10 @@
         <p>Johan G. C. - 2025</p>
     </footer>
 
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

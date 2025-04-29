@@ -17,7 +17,9 @@
 }
 
 @media (min-width: 401px) and (max-width: 1366px) {
- 
+  .gallery-c p {
+    width: 100%;
+  }
   .modal-body {
     margin-top: 0;
   }
