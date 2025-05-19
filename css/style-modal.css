@@ -1,6 +1,3 @@
-
-
-
 .modal {
     position: fixed;
     top: 0;
@@ -30,7 +27,7 @@
     max-width: 98%;
     min-width: 98%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transform: scale(0.9);
@@ -67,9 +64,7 @@
 .close-btn:hover {
     color: black;
 }
-.modal-body {
-    margin-top: 20px;
-}
+
 /* Personaliza la scrollbar */
 .modal-content::-webkit-scrollbar {
     width: 8px;
@@ -90,106 +85,55 @@
 }
 
 
-
-
-.sect-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.img-content1 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-}
-.img-content1 img {
-    background-color: black;
-    width: 90%;
-    margin: auto;
-    height: auto;      
-}
-.img-content2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 50px 0 50px;
-    flex-wrap: wrap;
-}
-.img-content2 img {
-    background-color: black;
-    height: 500px;
-    width: 500px;
-}
-.img-content3 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 50px 0 50px;
-    flex-wrap: wrap;
-}
-.img-content3 img {
-    width: 500px;
-    height: auto;
-    margin: auto;
-}
-
-.ti-modal-content {
-    text-align: center;
+/* CONTENIDO MODAL GENERAL */
+.modal-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: auto;
-    height: 250px;
-    width: 100%;
+    align-items: center;
 }
-.img-content10 {
+
+.mod-head {
+    width: 80vw;
+}
+.mod-tit {
+    text-align: center;
+    padding: 30px 0;
+    margin: 10px 0;
+    width: 100%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
+}
+.mod-tit-cad {
+    box-shadow: none;
+}
+.mod-head img {
+    width: 100%;
+    max-width: 1800px;
+    min-width: 100px;
+}
+.mod1 {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 50px 0 50px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 100px 0;
 }
-.img-content10 img {
-    background-color: black;
-    height: auto;
-    width: 20%;
+.mod1 img {
+    width: 32%;
+}
+.mod2{
+    display: flex;
+    justify-content: center;
+}
+.mod2 img {
+    margin: auto;
+    width: 80%;    
 }
 
 
 /* MODAL CADENA */
-.exito {
+.mod1cad {
+    width: 60%;
+}
+.mod1cad img {
     width: 100%;
-    
-}
-.cuponer {
-    height: auto;
-    text-align: center;
-}
-.cuponeras {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 20px 0 20px;
-}
-.cuponeras img {
-    width: 800px;
-    min-width: 200px;
-}
-.subt {
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    background-color: white;
-    padding: 50px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
-}
-.tit-prese {
-    height: 200px;
-    margin: 100px 0 50px;    
 }

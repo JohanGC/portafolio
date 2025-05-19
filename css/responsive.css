@@ -48,6 +48,7 @@
     .cont1 {
         margin: 0;
         width: 100%;
+        padding: 15px;
     }
 }
 
@@ -61,8 +62,17 @@
     p {
         font-size: 18px;
     }
+    .cont {
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+    }
     .cont1 {
-        padding: 40px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 30px;
+        justify-content: start;
     }
     .title {
         width: 700px;
@@ -78,9 +88,6 @@
         justify-content: center;
         max-width: 750px;
         height: auto;
-    }
-    .cont1 {
-        margin: 0;
     }
     .cont-po {
         height: 50vh;
@@ -109,17 +116,34 @@
     }
 }
 
-@media (min-width: 401px) and (max-width: 640px) {
-    .cont-po {
-        height: 200px;
-    }
-    .cade img {
-        height: 100%;
-        width: auto;
-    }    
-}
 
-@media (min-width: 401px) and (max-width: 767px) {
+
+@media (min-width: 521px) and (max-width: 767px) {
+    /* Estilos que se aplicarán solo dentro del rango especificado */
+    p {
+    font-size: 18px;
+    }
+    .men {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: black;
+      padding: 1rem 0;
+    }  
+    .men.active {
+      display: flex;
+    }  
+    .men li {
+      margin: 20px;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+    .icon {
+      display: block;
+    }
     .cont1 {
         padding: 0px;
         width: 90%;
@@ -204,44 +228,15 @@
     .gallery-c p {
         width: 100%;
     }
-}
-
-/* Media query para pantallas menores a 800px */
-@media (max-width: 800px) {
-    p {
-        font-size: 18px;
-    }
-    .men {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: black;
-      padding: 1rem 0;
-    }
-  
-    .men.active {
-      display: flex;
-    }
-  
-    .men li {
-      margin: 20px;
-      padding: 0.5rem 1rem;
-      text-align: center;
-    }
-  
-    .icon {
-      display: block;
+    .cont-po-cade {
+        width: 100%;
     }
 }
-
 
 /* Small devices (phones, 576px and down) */
 @media (max-width: 520px) {
     h1 {
-        font-size: 50px;
+        font-size: 80px;
         text-align: center;
     }
     h2 {
@@ -264,6 +259,27 @@
     a {
         font-size: 17px;
     }
+    .men {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: black;
+      padding: 1rem 0;
+    }  
+    .men.active {
+      display: flex;
+    }  
+    .men li {
+      margin: 20px;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+    .icon {
+      display: block;
+    }
 
     .item {
         display: flex;
@@ -274,15 +290,15 @@
     /*----------------- habilidades -----------------*/
 
     .habilidades {
-        margin: 200px 12px 100px 12px;
+        margin: 0;
         height: auto;
-    }
-    .habilidades h3 {
-        margin: 20px 0 5px 0;
+        padding: 15px;
     }
 
     /*----------------- slider -----------------*/
-
+    .container-exp2 {
+        height: auto;
+    }
 
     .text-port {
         text-align: center;
@@ -325,13 +341,9 @@
         flex-direction: column;
     }
     .cont1 {
+        padding: 15px;
+        margin: 0;
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-        margin-left: 12px;
-        margin-right: 12px;
     }
     article.co {
         overflow: hidden;
@@ -409,18 +421,15 @@
     }
     .cont-po {
         width: 100%;
-        height: 300px;
+        height: 350px;
+    }
+    .cont-po-cade {
+        height: 250px;
     }
     .cade img {
         height: 300px;
         width: auto;
         object-fit: cover;
-    }
-    .cont1 {
-        width: 100%;
-        height: auto;
-        padding: 0;
-        
     }
     .paragraph {
         padding: 0;

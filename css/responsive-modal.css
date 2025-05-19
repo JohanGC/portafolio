@@ -1,107 +1,98 @@
 /* Extra large devices (large desktops, 1200px and down) */
 @media (max-width: 1920px) {}
 
-/* Extra large devices (large desktops, 1200px and down) */
-@media (max-width: 1537px) {
-    
-}
+@media (min-width: 951px) and (max-width: 1366px) {
+    h1 {
+        margin-left: 100px;
+    }
+    .mod-head {
+      width: 95vw;
+    }
+    .cont {
+        width: 100%;
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    .cont1 {
+        margin: 0;
+        width: 100%;
+        padding: 15px;
+    }
 
-/* Large devices (desktops, 992px and down) */
-@media (min-width: 1367px) and (max-width: 1537) {
 
-}
+  }
 
-/* Medium devices (tablets, 768px and down) */
 @media (min-width: 768px) and (max-width: 950px) {
+  /*MODAL CADENA*/
+  .mod1cad {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mod-tit {
+    width: 85%;
+  }
+  .mod1cad img {
+    width: 80%;
+  }    
+}
   
-}
-
-@media (min-width: 401px) and (max-width: 1537px) {
-  .gallery-c p {
+@media (min-width: 521px) and (max-width: 767px) {
+  /*MODAL CADENA*/
+  .mod1 {
+    flex-direction: column;
+    align-items: center;
+  }    
+  .mod1 img {
     width: 100%;
   }
-  .modal-body {
-    margin-top: 0;
-  }
-  .sect-modal {
-    height: auto;
-  }
-  .img-content1 {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-  }
-  .img-content1 img {
-      height: auto;      
-  }
-  .img-content2 {
-      flex-direction: column;
-      width: 60%;
-      flex-wrap: wrap;
-  }
-  .img-content2 img {
-      background-color: black;
-      height: auto;
-      width: 100%;
-  }
-  .ti-modal-content {
-    height: 150px;
-  }
-  .img-content3 {
+  .mod-head {
     width: 100%;
-    height: auto;
-    margin: auto;
   }
-  .img-content3 img {
-    width: 50%;
-    height: auto;
+  .mod-head-2 img {
     margin: auto;
+    object-fit: cover;
+    height: 70vh;
   }
 }
-
-/* Media query para pantallas menores a 800px */
-@media (max-width: 800px) {
-    
-}
-
 
 /* Small devices (phones, 576px and down) */
 @media (max-width: 520px) {
-  .modal {
-    padding: 0;
+  p {
+    font-size: 16px;
   }
-  .modal-body {
-    margin-top: 0;
+  .modal {
+    width: 100vw;
+    margin: 0;
+    padding: 0px;
   }
   .modal-content {
-    max-width: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     border-radius: 0;
   }
-  .sect-modal {
-    height: auto;
+  .mod-head {
+    width: 100%;
   }
-  .img-content1 {
-      flex-direction: column;
-      width: 100%;
-      height: 300px;
+  .mod1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    margin: 40px 0;
   }
-  .img-content1 img {
-      background-color: black;
-      width: 100%;
-      transform: scale(1.5);
-      height: auto;      
+  .mod1 img {
+    width: 100%;
   }
-  .img-content2 {
-      flex-direction: column;
-      width: 100%;
-      flex-wrap: wrap;
+  .mod-head-2 {
+    margin: auto;
+    
   }
-  .img-content2 img {
-      background-color: black;
-      height: auto;
-      width: 100%;
-  }
-  .ti-modal-content {
-    height: 150px;
+  .mod-head-2 img {
+    margin: auto;
+    object-fit: cover;
+    height: 70vh;
   }
 }
