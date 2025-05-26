@@ -128,12 +128,13 @@
     margin: auto;
     width: 80%;    
 }
-
-
 /* MODAL CADENA */
 .mod1cad {
-    width: 60%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 50px 0;
 }
 .mod1cad img {
-    width: 100%;
+    width: 45%;
 }

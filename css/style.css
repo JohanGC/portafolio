@@ -368,4 +368,6 @@ footer {
 footer h4, p {
     margin: 5px;
 }
-
+.subt {
+    text-align: center;
+}

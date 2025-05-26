@@ -344,6 +344,7 @@
         padding: 15px;
         margin: 0;
         width: 100%;
+        height: auto;
     }
     article.co {
         overflow: hidden;

@@ -1,29 +1,36 @@
 /* Extra large devices (large desktops, 1200px and down) */
-@media (max-width: 1920px) {}
+@media (max-width: 1920px) {
+  
+  
+}
 
 @media (min-width: 951px) and (max-width: 1366px) {
-    h1 {
-        margin-left: 100px;
-    }
-    .mod-head {
-      width: 95vw;
-    }
-    .cont {
-        width: 100%;
-        display: flex;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-    }
-    .cont1 {
-        margin: 0;
-        width: 100%;
-        padding: 15px;
-    }
-
-
+  h1 {
+      margin-left: 100px;
   }
+  .mod-head {
+    width: 95vw;
+  }
+  .cont {
+      width: 100%;
+      display: flex;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+  }
+  .cont1 {
+      margin: 0;
+      width: 100%;
+      padding: 15px;
+  }
+  /*.mod1cad {
+    width: 100%;
+  }
+  .mod1cad img {
+    width: 100%;
+  }*/
+}
 
 @media (min-width: 768px) and (max-width: 950px) {
   /*MODAL CADENA*/
